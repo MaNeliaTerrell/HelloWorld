@@ -1,9 +1,13 @@
 package HelloWorld;
 
+import org.w3c.dom.ls.LSInput;
+
 import java.awt.*;
 import java.sql.SQLOutput;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -154,15 +158,15 @@ public class Main {
 
         // -----More examples----
 
-          String x ="1";
-          int y = Integer.parseInt(x) + 2 ;
-        System.out.println(y);   // 3
+//          String x ="1";
+//          int y = Integer.parseInt(x) + 2 ;
+//        System.out.println(y);   // 3
 
         //------parseDouble, parseFloat, parseShort, etc. ----
 
-        String f = "5.3";
-        double h = Double.parseDouble(f) + 6;
-        System.out.println(h);   // 11.3
+//        String f = "5.3";
+//        double h = Double.parseDouble(f) + 6;
+//        System.out.println(h);   // 11.3
 
         //-----------------MATH---------------(floor, ceil,random, round, max, min)
 
@@ -176,10 +180,48 @@ public class Main {
 //        double result =  Math.round(Math.random() * 100);  // returns a whole number between 0 and 100
         //int result =  (int)Math.round(Math.random() * 100); // explicit casting for int (removes the .0)
         // int result =  (int)Math.random() * 100; //always returns a 0 - it removes the decimal point & rounds back to zero
-       int result =  (int)(Math.random() * 100); //wrapping the Math random method in () includes *100
-        System.out.println(result);
+//       int result =  (int)(Math.random() * 100); //wrapping the Math random method in () includes *100
+//        System.out.println(result);
 
         //---------------FORMATTING NUMBERS in JAVA-------------
+                //NumberFormat imports a package
+                //Can't use NumberFormat as a class bec its abstract class, use the built-in method
+                // of the java text. Number Fornat returns a currency format for the current default FORMAT locale
+
+        //======getCurrencyInstance=======
+
+//        NumberFormat currency = NumberFormat.getCurrencyInstance();
+//        String result = currency.format(1234567.891);
+//        System.out.println(result);  //1,234,567.89
+
+        //=======getPercentInstance======
+
+//        NumberFormat percent = NumberFormat.getPercentInstance();
+//        String result = percent.format(0.1);
+
+            //====OR can be written this way ======
+
+//        String result = NumberFormat.getPercentInstance().format(0.1);  //chaining multiple methods in one line
+//        System.out.println(result);  // 10%
+
+        //----------------READING INPUT---------------
+            //import Scanner util
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Age: ");   //label the space where a user can type in an input
+//        byte age = scanner.nextByte();   //can use nextFloat, nextLong, nextShort, nextDouble
+//        System.out.println("You are " + age);
+
+        //-----------Strings -------------
+        // use next() for 1 token (name alone), nextLine() for multiple (name and last name, including spaces)
+        //use trim method to remove all unneeded spaces a the beginning
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Name: ");   //label the space where a user can type in an input
+//        String name = scanner.nextLine(); //or nextLine()
+        String name = scanner.nextLine().trim();
+        System.out.println("I am " + name);
+
 
     }
 }
