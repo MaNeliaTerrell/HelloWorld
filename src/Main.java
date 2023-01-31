@@ -113,21 +113,73 @@ public class Main {
 
 //        int result = 10 + 3;
 //        double num = (double) 10 / (double) 3;
-        int x = 1;
-        x++;  //increment by 1
-        int y = x++;
-        int z = ++x;
+//        int x = 1;
+//        //x++;  //increment by 1
+//        int y = x++;
+//        int z = ++x;
+//
+//        int a = 1;
+////        a = a + 2;
+//        a += 2;    //augmented assignment operators
+//
+////        System.out.println(result);
+////        System.out.println(num);
+//        System.out.println(x);
+//        System.out.println(y);
+//        System.out.println(z);
+//        System.out.println(a);
 
-        int a = 1;
-        a = a + 2;
-        a += 2;
+        //---------CASTING --------
+            //Implicit casting or automatic conversion
+            // byte > short > int > long > float > double
+//        short x = 1;
+//        int y = x + 2;
+//        System.out.println(y);
+//
+//        double w = 1.1;
+//        double t = w + 2;
+//        System.out.println(t);
 
-//        System.out.println(result);
-//        System.out.println(num);
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
-        System.out.println(a);
+        //Explicit castibng
+
+//        double x = 1.2;
+//        int y = (int)x + 2;      //Explicit casting - convert x to an integer
+//        System.out.println(y);    // 3
+
+        //----- String to an integer -----
+
+//        String x = "1";
+//        Integer.parseInt(x);
+//        System.out.println(x);
+
+        // -----More examples----
+
+          String x ="1";
+          int y = Integer.parseInt(x) + 2 ;
+        System.out.println(y);   // 3
+
+        //------parseDouble, parseFloat, parseShort, etc. ----
+
+        String f = "5.3";
+        double h = Double.parseDouble(f) + 6;
+        System.out.println(h);   // 11.3
+
+        //-----------------MATH---------------(floor, ceil,random, round, max, min)
+
+//        int result =  Math.round(3.4F);  // 3
+        //int result =  (int)Math.ceil(3.4F);   //4
+        //int result = (int)Math.floor(3.4F);  //3
+        //int result =  Math.max(3, 6);  //6
+        //int result =  Math.min(3, 6); //3
+        //double result =  Math.random();  // returns a random decimal between 0 and 1
+        //double result =  Math.random() * 100;  // returns a random number (with decimals) between 0 and 100
+//        double result =  Math.round(Math.random() * 100);  // returns a whole number between 0 and 100
+        //int result =  (int)Math.round(Math.random() * 100); // explicit casting for int (removes the .0)
+        // int result =  (int)Math.random() * 100; //always returns a 0 - it removes the decimal point & rounds back to zero
+       int result =  (int)(Math.random() * 100); //wrapping the Math random method in () includes *100
+        System.out.println(result);
+
+        //---------------FORMATTING NUMBERS in JAVA-------------
 
     }
 }
