@@ -186,7 +186,7 @@ public class Main {
         //---------------FORMATTING NUMBERS in JAVA-------------
                 //NumberFormat imports a package
                 //Can't use NumberFormat as a class bec its abstract class, use the built-in method
-                // of the java text. Number Fornat returns a currency format for the current default FORMAT locale
+                // of the java text. Number Format returns a currency format for the current default FORMAT locale
 
         //======getCurrencyInstance=======
 
@@ -216,11 +216,13 @@ public class Main {
         // use next() for 1 token (name alone), nextLine() for multiple (name and last name, including spaces)
         //use trim method to remove all unneeded spaces a the beginning
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Name: ");   //label the space where a user can type in an input
-//        String name = scanner.nextLine(); //or nextLine()
-        String name = scanner.nextLine().trim();
-        System.out.println("I am " + name);
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Name: ");   //label the space where a user can type in an input
+////        String name = scanner.nextLine(); //or nextLine()
+//        String name = scanner.nextLine().trim();
+//        System.out.println("I am " + name);
+
+
 
 
     }
