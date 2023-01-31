@@ -85,15 +85,49 @@ public class Main {
 //                                                        // index 0 and 1 were initialized as 1 and 2
 
 
-        int[] numbers = {2, 3, 5, 1, 4};
+//        int[] numbers = {2, 3, 5, 1, 4};
+//
+//        System.out.println(numbers.length);   // 5
+//
+//        Arrays.sort(numbers);
+//
+//        System.out.println(Arrays.toString(numbers)); // 1, 2, 3, 4, 5
 
-        System.out.println(numbers.length);   // 5
+        // ------- MULTI-DIMENSIONAL ARRAY --------
 
-        Arrays.sort(numbers);
+//        int[][] numbers = new int[2][3];    // 2 rows , 3 columns
+//        numbers[0][0] = 1;
+//        System.out.println(Arrays.deepToString(numbers)); //returns the string rep of the deep content
+//                                           // of the multi-dimensional Object array  /// [[1, 0, 0], [0, 0, 0]]
 
-        System.out.println(Arrays.toString(numbers)); // 1, 2, 3, 4, 5
+        // --------USING CURLY BRACES-------
 
+//        int[][] numbers = { {1, 2, 3}, {4, 5, 6 } };
+//        System.out.println(Arrays.deepToString(numbers));   // [[1, 2, 3], [4, 5, 6]
 
+        //---------CONSTANTS--------
+
+           // final float PI = 3.14F; // final indicates that the value pf Pi cannot be changed
+
+        //--------ARITHMETIC EXPRESSIONS-------
+
+//        int result = 10 + 3;
+//        double num = (double) 10 / (double) 3;
+        int x = 1;
+        x++;  //increment by 1
+        int y = x++;
+        int z = ++x;
+
+        int a = 1;
+        a = a + 2;
+        a += 2;
+
+//        System.out.println(result);
+//        System.out.println(num);
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+        System.out.println(a);
 
     }
 }
